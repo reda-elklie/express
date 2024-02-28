@@ -2,11 +2,12 @@
   "name": "expersscrashcourse",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "nodemon ./src/index.mjs",
+    "dev": "nodemon ./src/index.mjs"
   },
   "keywords": [],
   "author": "",
