@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
 
 router.post("/api/user", (req, res) => {
   console.log(req.body);
-  const { body } = req;
+  const { body } = req; 
   const addedUser = { id: users[users.length - 1].id + 1, ...body };
   users.push(addedUser);
   res.status(201).send(users);
